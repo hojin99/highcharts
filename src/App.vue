@@ -3,7 +3,10 @@
         <el-tabs v-model="activeName" @tab-click="navigate">
             <el-tab-pane v-for="menu in menuList" :label="menu.name" :name="menu.path" :key="menu.index"></el-tab-pane>
         </el-tabs>
-        <router-view></router-view>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+        
   </div>
 </template>
 
@@ -15,6 +18,7 @@ export default {
     return {
       menuList: [
         {index:0, name:'Basic', path:"/basic"},
+        {index:1, name:'Plot', path:"/plot"},
    
 
       ],
