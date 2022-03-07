@@ -10,6 +10,24 @@
 </template>
 
 <script>
+import highcharts from 'highcharts';
+
+// Global 설정 (모든 Chart에 적용됨)
+highcharts.setOptions({
+  chart: {
+    backgroundColor: {
+      linearGradient: [0,0,500,500],
+      stops: [
+        [0, 'rgb(255,255,255)'],
+        [1, 'rgb(240,240,255)']
+      ]
+    },
+    borderWidth: 1, 
+    plotBackgroundColor: 'rgba(255,255,255,.9)',
+    plotShadow: false,
+    plotBorderWidth: 2
+  }
+});
 
 export default {
   name: 'App',
