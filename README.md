@@ -21,6 +21,7 @@ vue 프로젝트 생성(상위 디렉토리에서 실행, 기본 구성)
 https://www.highcharts.com/blog/tutorials/highcharts-vue-wrapper/  
 
 ## 실행
+npm install을 통해서 의존성 업데이트  
 package.json의 serve를 이용해서 실행 (자동으로 웹페이지가 뜬다.)
 
 ## 참조
